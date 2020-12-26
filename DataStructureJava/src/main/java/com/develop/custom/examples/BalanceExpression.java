@@ -13,6 +13,7 @@ public class BalanceExpression {
 				stack.push(input);
 			}
 			if(input==')') {
+				if(!stack.isEmpty())
 				stack.pop();
 			}
 		}
