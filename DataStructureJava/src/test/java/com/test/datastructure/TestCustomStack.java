@@ -1,3 +1,4 @@
+package com.test.datastructure;
 import org.junit.Ignore;
 import org.junit.Test;
 
