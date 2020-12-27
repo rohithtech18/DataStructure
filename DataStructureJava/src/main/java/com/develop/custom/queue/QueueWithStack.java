@@ -15,7 +15,7 @@ public class QueueWithStack {
 	public void enqueue(int item) {
 		stack1.push(item);
 	}
-	public int dequeue(int item) {
+	public int dequeue() {
 		if(stack2.isEmpty())
 			while(!stack1.isEmpty())
 			{

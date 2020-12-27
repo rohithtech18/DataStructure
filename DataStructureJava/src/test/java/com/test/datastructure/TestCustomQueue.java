@@ -43,7 +43,7 @@ public class TestCustomQueue {
     	queueWithStack.enqueue(30);
     	queueWithStack.enqueue(40);
     	queueWithStack.enqueue(50);
-    	queueWithStack.print();
+    	queueWithStack.dequeue();
     }
     
 }
