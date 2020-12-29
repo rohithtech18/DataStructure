@@ -9,6 +9,7 @@ import org.junit.Test;
 public class TestCustomQueue {
 	com.develop.custom.queue.Queue customQueue=null;
 	com.develop.custom.queue.QueueWithStack queueWithStack=null;
+	com.develop.custom.queue.PriorityQueue priorityQueue=null;
     @Test
     @Ignore
 	public void testReverseQueue() {
@@ -35,7 +36,7 @@ public class TestCustomQueue {
     }
     
     @Test
-  
+    @Ignore
     public void testStackEnqueue() {
     	queueWithStack = new com.develop.custom.queue.QueueWithStack();
     	queueWithStack.enqueue(10);
@@ -45,5 +46,13 @@ public class TestCustomQueue {
     	queueWithStack.enqueue(50);
     	queueWithStack.dequeue();
     }
-    
+    @Test
+  
+    public void testStackPQEnqueue() {
+    	priorityQueue = new com.develop.custom.queue.PriorityQueue();
+    	priorityQueue.enqueue(10);
+    	priorityQueue.enqueue(20);
+    	priorityQueue.enqueue(5);
+    	System.out.println(priorityQueue);
+    }
 }
